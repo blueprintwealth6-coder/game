@@ -1,0 +1,60 @@
+import { Mission } from './types.ts';
+
+export const STORY_MISSIONS: Mission[] = [
+  {
+    id: 'mission_1',
+    title: 'THE MALIBU SPRINT',
+    subtitle: 'Street Race on Ocean Drive',
+    description: 'Speed down the neon beachfront through all checkpoints and reach The Malibu Club before time runs out!',
+    reward: 2500,
+    status: 'available',
+    startPos: [134, 0.2, -145],
+    checkpointList: [
+      [140, 0.5, -90],
+      [140, 0.5, 0],
+      [140, 0.5, 90],
+      [140, 0.5, 200],
+      [110, 0.5, 200],
+      [80, 0.5, 100],
+      [80, 0.5, -100],
+      [134, 0.5, -215], // Finish at The Malibu Club
+    ],
+    currentCheckpoint: 0,
+    timer: 65,
+  },
+  {
+    id: 'mission_2',
+    title: "DIAZ'S MANSION RAID",
+    subtitle: 'Starfish Island Infiltration',
+    description: 'Cross the bridge to Starfish Island, infiltrate the Diaz estate villa, eliminate the cartel henchmen, and secure the stash!',
+    reward: 5000,
+    status: 'available',
+    startPos: [134, 0.2, -215],
+    targetPos: [-10, 0.5, -40],
+    enemyCount: 6,
+    enemiesRemaining: 6,
+  },
+  {
+    id: 'mission_3',
+    title: 'HOT PURSUIT - 3 STARS',
+    subtitle: 'Evade Vice City PD Dragnet',
+    description: 'The police have locked down the district! Escape the 3-star pursuit and deliver the contraband to the Viceport Docks safehouse.',
+    reward: 8000,
+    status: 'available',
+    startPos: [-10, 0.2, -40],
+    targetPos: [-280, 0.5, 280], // Vice Docks
+    timer: 90,
+  },
+  {
+    id: 'mission_4',
+    title: 'DOWNTOWN SKY HEIST',
+    subtitle: 'Skyscraper Rooftop Assault',
+    description: 'Head to Downtown Vice City, battle your way up the high-rise tower, secure the vault codes, and perform an epic escape!',
+    reward: 15000,
+    status: 'available',
+    startPos: [-280, 0.2, 280],
+    targetPos: [-240, 0.5, 80],
+    enemyCount: 8,
+    enemiesRemaining: 8,
+  },
+];

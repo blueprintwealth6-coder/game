@@ -1,0 +1,6 @@
+{
+  "name": "Vice City: Next-Gen",
+  "description": "An expansive 3D open-world action experience set in neon-lit Vice City with GTA V caliber visuals, driving physics, police chases, missions, and retro synth radio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
